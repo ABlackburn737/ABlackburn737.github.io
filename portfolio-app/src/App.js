@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './components/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Work In Progress!</h1>
-        <p>... come back soon</p>
-      </header>
+      <NavBar />
     </div>
   );
 }
