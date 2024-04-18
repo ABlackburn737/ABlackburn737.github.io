@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/navIcon1.svg';
-import navIcon2 from '../assets/img/navIcon2.svg';
-import navIcon3 from '../assets/img/navIcon3.svg';
+import linkedinIcon from '../assets/img/linkedinIcon.svg';
+import githubIcon from '../assets/img/githubIcon.svg';
 
 // Navigation bar for the top of screen
 
@@ -34,10 +32,6 @@ export const NavBar = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
           <Container>
-            <Navbar.Brand href="/">
-                <img src={logo} alt="Logo"/>
-            </Navbar.Brand>
-
             <Navbar.Toggle aria-controls="basic-navbar-nav">
                 <span className="navbar-toggle-icon"></span>
             </Navbar.Toggle>
@@ -52,7 +46,7 @@ export const NavBar = () => {
                         className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} 
                         onClick={() => onUpdateActiveLink('projects')}
                         >Projects</Nav.Link>
-                <Nav.Link href="#resume" 
+                <Nav.Link href="https://docs.google.com/document/d/1WoeMxLeHIptmiu0eWaufbv9C0xDg0wVU1VwrydPAyME/edit?usp=sharing" target="_blank" 
                         className={activeLink === 'resume' ? 'active navbar-link' : 'navbar-link'} 
                         onClick={() => onUpdateActiveLink('resume')}
                         >Resume</Nav.Link>
@@ -60,14 +54,9 @@ export const NavBar = () => {
 
               <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt=""/></a>
-                    <a href="#"><img src={navIcon2} alt=""/></a>
-                    <a href="#"><img src={navIcon3} alt=""/></a>
+                    <a href="https://www.linkedin.com/in/alexander-blackburn-167573269/" target="_blank"><img src={linkedinIcon} alt=""/></a>
+                    <a href="https://github.com/ABlackburn737" target="_blank"><img src={githubIcon} alt=""/></a>
                 </div>
-
-                <button className="vvd" onClick={() => console.log('connect')}>
-                    <span>Let's Connect!</span>
-                </button>
               </span>
             </Navbar.Collapse>
           </Container>
