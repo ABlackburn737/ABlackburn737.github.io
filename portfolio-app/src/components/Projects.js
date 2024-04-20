@@ -7,8 +7,8 @@ export const Projects = () => {
 
   const gameProjects = [
     {
-        title: "Flowing Grass w/ Three.js",
-        description: "Creating an optimized render of fields of grass flowing in the wind. By utilizing LoD, noise mapping, and vertex shaders this render can achieve a frame response of 1.5ms while looking stunning!",
+        title: "Coming Soon!",
+        description: "Who knows what I might do next...",
         imgUrl: comingSoonImg,
         projectUrl: "#projects",
     },
